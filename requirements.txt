@@ -1,0 +1,4 @@
+RPi.GPIO
+alsaaudio
+vlc
+pydbus

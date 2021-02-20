@@ -225,6 +225,7 @@ class JukeBox:
                 else:
                     volume = int(volume)
 
+            volume = max(0, min(100, volume))  # Ensure we're in the 0 to 100 range
             self.mixer.setvolume(volume)
             self.logger.debug(
                 f'Set volume for {self.mixer.mixer()} to {volume}')

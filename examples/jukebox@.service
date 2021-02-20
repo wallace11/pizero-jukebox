@@ -1,0 +1,9 @@
+[Unit]
+Description=pizero-jukebox service
+After=bluetooth.service
+
+[Service]
+ExecStart=%h/pizero-jukebox/main.py -m %i
+
+[Install]
+WantedBy=default.target
